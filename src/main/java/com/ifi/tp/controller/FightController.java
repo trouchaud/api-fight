@@ -69,7 +69,7 @@ public class FightController {
     }
 
     @GetMapping("/engage/{name1}/{name2}")
-    void setFight(@PathVariable String name1,
+    Fight setFight(@PathVariable String name1,
                                @PathVariable String name2){
 
         Trainer trainer1 = this.trainerService.getTrainer(name1);
@@ -123,5 +123,7 @@ public class FightController {
         this.trainerService.putTrainer(trainer2);
         this.trainerService.putTrainer(trainer1);
         this.fightService.setFight(fight);
+
+        return fight;
     }
 }
