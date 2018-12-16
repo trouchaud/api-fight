@@ -24,46 +24,7 @@ public class FighterApi {
     public CommandLineRunner demo(
             FightRepository fightRepository, DetailRepository detailRepository) {
         return (args) -> {
-            Fight f1 = new Fight();
-            f1.setNameFighter1("Ash");
-            f1.setNameFighter2("Misty");
-            f1.setWinner("Ash");
 
-            Detail detail = new Detail();
-            detail.setRound(1);
-            detail.setDescription("Pikachu atack");
-
-            Detail detail2 = new Detail();
-            detail2.setRound(2);
-            detail2.setDescription("Strami atack");
-
-            Detail detail3 = new Detail();
-            detail3.setRound(3);
-            detail3.setDescription("fight over, Ash win");
-
-            f1.setDetails(List.of(detail, detail2, detail3));
-
-            Fight f2 = new Fight();
-            f2.setNameFighter1("Misty");
-            f2.setNameFighter2("Ash");
-            f2.setWinner("Misty");
-
-            detail = new Detail();
-            detail.setRound(1);
-            detail.setDescription("Raichu atack");
-
-            detail2 = new Detail();
-            detail2.setRound(2);
-            detail2.setDescription("Strami atack");
-
-            detail3 = new Detail();
-            detail3.setRound(3);
-            detail3.setDescription("fight over, Misty win");
-
-            f2.setDetails(List.of(detail, detail2, detail3));
-
-            fightRepository.save(f1);
-            fightRepository.save(f2);
         };
     }
 }

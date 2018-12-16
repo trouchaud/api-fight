@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93c565ef-8375-4fa4-b0b0-b9d32d7ba5e0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ifi/tp/controller/FightController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ifi/tp/controller/FightController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ifi/tp/FighterApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ifi/tp/FighterApi.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,7 +75,7 @@
         <counts>
           <entry key="class" value="2" />
           <entry key="iml" value="1" />
-          <entry key="java" value="42" />
+          <entry key="java" value="43" />
           <entry key="properties" value="4" />
           <entry key="xml" value="1" />
         </counts>
@@ -84,7 +84,7 @@
         <counts>
           <entry key="CLASS" value="2" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="42" />
+          <entry key="JAVA" value="43" />
           <entry key="Properties" value="4" />
           <entry key="XML" value="1" />
         </counts>
@@ -93,11 +93,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ifi/tp/controller/FightController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="126" column="33" selection-start-line="126" selection-start-column="33" selection-end-line="126" selection-end-column="33" />
+            <state relative-caret-position="421">
+              <caret line="127" column="9" lean-forward="true" selection-start-line="127" selection-start-column="9" selection-end-line="127" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ifi/tp/FighterApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -181,15 +193,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ifi/tp/bo/PokemonType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ifi/tp/service/FightServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
@@ -248,7 +251,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ifi/tp/controller/TrainerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ifi/tp/repository/DetailRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ifi/tp/bo/Detail.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ifi/tp/FighterApi.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/ifi/tp/service/PokemonServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ifi/tp/service/PokemonService.java" />
@@ -263,6 +265,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ifi/tp/service/FightServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ifi/tp/service/FightService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ifi/tp/controller/FightController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ifi/tp/FighterApi.java" />
       </list>
     </option>
   </component>
@@ -383,7 +386,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544922946350" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544923214593" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -433,12 +436,12 @@
       <workItem from="1544783516979" duration="9844000" />
       <workItem from="1544816435172" duration="4946000" />
       <workItem from="1544885206609" duration="2467000" />
-      <workItem from="1544888949137" duration="21675000" />
+      <workItem from="1544888949137" duration="21944000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38932000" />
+    <option name="totallyTimeSpent" value="39201000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="36" width="1366" height="731" extended-state="6" />
@@ -599,18 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
           <caret line="521" selection-start-line="521" selection-end-line="521" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ifi/tp/FighterApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -782,8 +773,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ifi/tp/controller/FightController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="126" column="33" selection-start-line="126" selection-start-column="33" selection-end-line="126" selection-end-column="33" />
+        <state relative-caret-position="421">
+          <caret line="127" column="9" lean-forward="true" selection-start-line="127" selection-start-column="9" selection-end-line="127" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ifi/tp/FighterApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
