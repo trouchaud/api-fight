@@ -69,11 +69,30 @@ public class FightController {
     }
 
     @GetMapping("/engage/{name1}/{name2}")
-    Iterable<Fight> setFight(@PathVariable String name1,
+    void setFight(@PathVariable String name1,
                                @PathVariable String name2){
 
         Trainer trainer1 = this.trainerService.getTrainer(name1);
         Trainer trainer2 = this.trainerService.getTrainer(name2);
+
+        List<Pokemon> team1 = new ArrayList<>();
+        List<Pokemon> team2 = new ArrayList<>();
+
+        for (Iterator<Pokemon> iter = trainer1.getTeam().listIterator(); iter.hasNext(); ) {
+            Pokemon pok = iter.next();
+
+            if (pok.getHp() > 0) {
+                team1.add(pok);
+            }
+        }
+
+        for (Iterator<Pokemon> iter = trainer2.getTeam().listIterator(); iter.hasNext(); ) {
+            Pokemon pok = iter.next();
+
+            if (pok.getHp() > 0) {
+                team2.add(pok);
+            }
+        }
 
         Fight fight = new Fight();
         fight.setNameFighter1(name1);
@@ -81,31 +100,28 @@ public class FightController {
 
         Detail initFight = new Detail();
         initFight.setRound(1);
-        initFight.setDescription(trainer1.getTeam().get(0).getType().getName()
+        initFight.setDescription(team1.get(0).getType().getName()
                 +" will fight "+
-                trainer2.getTeam().get(0).getType().getName());
+                team2.get(0).getType().getName());
 
         fight.setDetails(List.of(initFight));
 
-        fight.fight(trainer1.getTeam().get(1),trainer2.getTeam().get(1));
+        int sizeTeam1 = team1.size();
+        int sizeTeam2 = team2.size();
+        int i=0, j=0;
+
+        while (i<sizeTeam1&&j<sizeTeam2){
+            fight.fight(team1.get(i),team2.get(j));
+            if(team1.get(i).getHp()==0){
+                i++;
+            }
+            if(team2.get(j).getHp()==0){
+                j++;
+            }
+        }
 
         this.trainerService.putTrainer(trainer2);
         this.trainerService.putTrainer(trainer1);
         this.fightService.setFight(fight);
-
-        return this.fightService.getAllFights();
     }
-
-//    void fight(Pokemon pok1,Pokemon pok2){
-//        boolean ko = false;
-//        PokemonType pokType1 = pok1.getType();
-//        PokemonType pokType2 = pok2.getType();
-//
-//        while(!ko){
-//            if(pok.getStats().getSpeed() > pokEnemie.getStats().getSpeed()) {
-//                this.atack(enemie);
-//                enemie.atack(this);
-//            }
-//        }
-//    }
 }
