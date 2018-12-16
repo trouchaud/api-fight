@@ -19,4 +19,9 @@ public class FightServiceImpl implements FightService {
     public Iterable<Fight> getAllFights() {
         return this.fightRepository.findAll();
     }
+
+    @Override
+    public void setFight(Fight fight){
+        this.fightRepository.save(fight);
+    }
 }

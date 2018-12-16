@@ -6,4 +6,6 @@ public interface FightService {
 
     Iterable<Fight> getAllFights();
 
+    void setFight(Fight fight);
+
 }
