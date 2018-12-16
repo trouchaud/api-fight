@@ -120,6 +120,13 @@ public class FightController {
             }
         }
 
+        if(team1.get(i).getHp() == 0){
+            fight.setWinner(name2);
+        }
+        else{
+            fight.setWinner(name1);
+        }
+
         this.trainerService.putTrainer(trainer2);
         this.trainerService.putTrainer(trainer1);
         this.fightService.setFight(fight);
