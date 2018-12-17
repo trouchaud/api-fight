@@ -120,6 +120,9 @@ public class FightController {
             }
         }
 
+        if(i==sizeTeam1) i--;
+        if(j==sizeTeam2) j--;
+
         if(team1.get(i).getHp() == 0){
             fight.setWinner(name2);
         }
