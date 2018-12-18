@@ -130,6 +130,13 @@ public class FightController {
             fight.setWinner(name1);
         }
 
+        if(fight.getWinner().equals(trainer1.getName())){
+            trainer1.setMoney(trainer1.getMoney()+1000);
+        }
+        else{
+            trainer2.setMoney(trainer2.getMoney()+1000);
+        }
+
         this.trainerService.putTrainer(trainer2);
         this.trainerService.putTrainer(trainer1);
         this.fightService.setFight(fight);
